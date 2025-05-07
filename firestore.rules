@@ -1,0 +1,14 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Allow read and write if the user is authenticated and is the owner of the movie document
+    match /movies/{movieId} {
+      allow read, write: if request.auth != null && request.auth.uid == resource.data.uid;
+      
+      // Allow creating new movie docs if the user is authenticated
+      allow create: if request.auth != null;
+    }
+  }
+}
