@@ -107,7 +107,7 @@ const MovieList = () => {
 
   const fetchMovieDetails = async (title, yearInput) => {
     try {
-      const url = `http://www.omdbapi.com/?t=${encodeURIComponent(title)}${
+      const url = `https://www.omdbapi.com/?t=${encodeURIComponent(title)}${
         yearInput ? `&y=${yearInput}` : ""
       }&apikey=${API_KEY}`;
       const res = await axios.get(url);
