@@ -1,0 +1,81 @@
+.bg-soft-light {
+  background-color: #e6d2d2; /* Soft light grey */
+}
+/* Movie card styles */
+.card {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom-in effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+/* Optional: Add an overlay effect */
+.card:hover .card-img-overlay {
+  opacity: 1; /* Show overlay when hovering */
+}
+
+/* Random Movie Picker Button */
+.btn-outline-primary {
+  border: 1px solid #007bff;
+  color: #007bff;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Random Movie Pick Text Animation */
+.random-picked-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  opacity: 0;
+  animation: fadeInOut 3s ease-out forwards;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Confetti */
+.react-confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.react-confetti.active {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+/* Random Movie Picker Button */
+.btn-outline-primary {
+  border: 1px solid #007bff;
+  color: #007bff;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+
+.picked-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.picked-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 25px rgba(13, 110, 253, 0.3);
+}

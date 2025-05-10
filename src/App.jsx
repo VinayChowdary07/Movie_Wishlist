@@ -5,6 +5,8 @@ import { auth } from "./firebase/config.jsx";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "animate.css";
+
 
 function App() {
   const [user, setUser] = useState(null);
